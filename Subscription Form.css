@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eef0f8;
+    display: grid;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.Container{
+    background-color: #fff;
+    width: 600px;
+    height: 530px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   place-items: center;
+    line-height: 1.5;
+   box-shadow: 1px 20px 30px rgba(0, 0,0, 0.185);
+}
+
+.Container::after{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(to bottom right ,#c33dc1 , #32eb8e);
+    width: 1000px;
+    height: 900px;
+    z-index: -1;
+    border-radius: 50%;
+    
+}
+.Container-class{
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+    font-size: large;
+    color: black;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px black;
+    cursor: pointer;
+
+}
+
+img{
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    place-items: right;
+}
+
+.Container-text{
+    padding: 10px 40px 10px 10px;
+}
+
+h2{
+    font-size: large;
+    color: #1a2350;
+
+}
+
+p{
+    font-size: 15px;
+    color: #3b4169;
+  
+}
+
+input,button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+input{
+    border: 2px solid #daddec;
+    margin: 5px 2px 10px;
+    font-size: small;
+    color: #1a2350;
+
+}
+
+button{
+    background-image: linear-gradient(to bottom right ,#ff9ec4 ,#ffc37e);
+    display: block;
+    color: #fff;
+    font-size: large;
+    cursor: pointer;
+    box-shadow: 0 3px 5px #1a2350;
+    margin-bottom: 5px;
+}
+
+span{
+    display: block;
+    text-align: center;
+    color: #74798d;
+    font-size: 14px;
+    margin: 20px 0  0;
+}
