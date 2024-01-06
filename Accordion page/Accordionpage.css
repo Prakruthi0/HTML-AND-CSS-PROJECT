@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background : linear-gradient(45deg, hotpink, rgb(228, 129, 0));
+    font-family:'Times New Roman', Times, serif;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.accordion{
+    margin: 100px auto;
+    width: 600px;
+}
+
+.accordion li{
+       list-style: none;
+       width: 100%;
+       margin-bottom: 15px;
+       padding: 10px;
+       background-color: #fff;
+       border-radius: 5px;
+}
+
+label{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: crimson;
+    font-weight: 600;
+    font-style: bold;
+    text-shadow: 1px 1px black;
+}
+
+span{
+    transform: rotate(90deg);
+    color: red;
+}
+
+input{
+    display: none;
+
+}
+
+.content{
+    overflow: hidden;
+    padding: 0 10px;
+    line-height: 25px;
+    max-height: 0;
+    transform: max-height 05s;
+
+}
+
+input:checked+ .content{
+    max-height: 400px;
+}
+
+
