@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(24, 177, 108);
+
+}
+
+.card-container{
+    position: relative;
+    padding: 40px;
+    width: 500px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.card-container::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: calc(-100% +5px);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: 1s;
+}
+
+.card-container:hover::before{
+    bottom: 0;
+}
+
+.content{
+    position: relative;
+    color: black;
+    z-index: 2;
+    transition: 1s;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+p{
+    padding: 20px 0;
+    margin: 20px 0;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    color: white;
+    background-color: darkmagenta;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.card-container:hover .content{
+    color: #fff;
+    background-color: rgb(184, 141, 22);
+}
